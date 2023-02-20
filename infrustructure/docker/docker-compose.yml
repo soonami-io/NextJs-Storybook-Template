@@ -1,0 +1,11 @@
+version: '3'
+services:
+  react-dapp:
+    container_name: mquark-marketplace
+    build:
+      context: ../../
+      dockerfile: ./infrastructure/docker/default.Dockerfile
+    ports:
+      - 80:3000
+    environment:
+      NODE_ENV: staging
