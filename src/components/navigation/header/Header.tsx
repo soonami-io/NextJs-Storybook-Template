@@ -10,19 +10,19 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
       className={`w-full flex flex-row justify-between ${className}`}
     >
       <div className="space-x-5 m-5">
-        <Link href="/">
-          <a className="hover:underline">Home</a>
+        <Link href="/" className="hover:underline">
+          Home
         </Link>
-        <Link href="/">
-          <a className="hover:underline">Gallery</a>
+        <Link href="/" className="hover:underline">
+          Gallery
         </Link>
       </div>
       <div className="space-x-5 m-5">
-        <Link href="/">
-          <a className="hover:underline hidden sm:inline">Artists</a>
+        <Link href="/" className="hover:underline hidden sm:inline">
+          Artists
         </Link>
-        <Link href="/">
-          <a className="hover:underline hidden sm:inline">Projects</a>
+        <Link href="/" className="hover:underline hidden sm:inline">
+          Projects
         </Link>
         {/* <AuthButton /> */}
       </div>
