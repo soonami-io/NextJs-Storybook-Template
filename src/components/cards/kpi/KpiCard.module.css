@@ -1,0 +1,54 @@
+.container {
+  margin: 1rem;
+}
+
+.container * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  width: clamp(15rem, calc(15rem + 2vw), 17rem);
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background: #ece8e6;
+  background: linear-gradient(to right, #fff, #ece9e6);
+}
+
+.card__header {
+  /*  */
+}
+
+.card__image {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.tag {
+  /*  */
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(ro bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
