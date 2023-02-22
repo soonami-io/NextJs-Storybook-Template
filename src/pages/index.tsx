@@ -1,11 +1,13 @@
+import LandingLayout from '@/layout/landing/Landing';
+import styles from '@/styles/Home.module.css';
+import { NextPageWithLayout } from '@/types/page';
+import { Inter } from '@next/font/google';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
-import styles from '@/styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -120,4 +122,10 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;
+
+Home.getLayout = (page) => {
+  return <LandingLayout>{page}</LandingLayout>;
+};
