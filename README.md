@@ -26,13 +26,16 @@ Note: above commit message format can be modified in `commitlint.config.js`
 
 Unused variables can be escaped with and `_` (trailing underscore)
 
-## VSCode Debugger
-
-The VSCode debugger is also set up for this project. You can find the debugger configuration in the `.vscode` folder.
-
-
 
 ## Getting Started
+
+To get started, follow these steps:
+
+1. Clone this repository.
+2. Remove the existing git remote origin `git remote remove origin`.
+3. Add a new git remote for your own repository `git remote add origin <your-github-repo-url>`.
+4. Install dependencies using `npm install`.
+5. Start the development mode with `npm run dev`.
 
 First, run the development server:
 
@@ -53,6 +56,10 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## VSCode Debugger
+
+The VSCode debugger is also set up for this project. You can find the debugger configuration in the `.vscode` folder.
 
 ## Learn More
 
