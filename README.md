@@ -1,5 +1,37 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Boilerplate Template for NextJs 13 with Storybook
+
+This project is pre-configured with pre-hooks using _huskie_ that include the following checks:
+
+- **commit-message**: commit message format validation
+- **pre-commit**: eslint check
+- **pre-push**: build checks
+
+## Commit message format
+
+Default commit messages should start with one of the following prefixes:
+
+- **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- **ci**: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- **docs**: Documentation only changes
+- **feat**: A new feature
+- **fix**: A bug fix
+- **perf**: A code change that improves performance
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **test**: Adding missing tests or correcting existing tests
+
+Note: above commit message format can be modified in `commitlint.config.js`
+
+Unused variables can be escaped with and `_` (trailing underscore)
+
+## VSCode Debugger
+
+The VSCode debugger is also set up for this project. You can find the debugger configuration in the `.vscode` folder.
+
+
+
 ## Getting Started
 
 First, run the development server:
