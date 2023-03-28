@@ -35,7 +35,6 @@ To get started, follow these steps:
 2. Remove the existing git remote origin `git remote remove origin`.
 3. Add a new git remote for your own repository `git remote add origin <your-github-repo-url>`.
 4. Install dependencies using `npm install`.
-5. Start the development mode with `npm run dev`.
 
 First, run the development server:
 
@@ -56,6 +55,18 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Storybook
+
+This project also includes Storybook, a UI component development environment. To start Storybook, run the following command:
+
+```bash
+npm run storybook
+# or
+yarn storybook
+```
+
+Storybook should start up and be available at `http://localhost:6006`. You can explore the various components and view their documentation and usage examples.
 
 ## VSCode Debugger
 
